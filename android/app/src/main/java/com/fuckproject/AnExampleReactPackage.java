@@ -4,8 +4,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
-
-//Do i need these...
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
@@ -16,13 +14,9 @@ class AnExampleReactPackage implements ReactPackage {
 
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-    List<NativeModule> modules = new ArrayList<>(
-    //Or this...
-      //new ToastAndroid(reactContext)
-    );
+    List<NativeModule> modules = new ArrayList<>();
 
     modules.add(new ToastModule(reactContext));
-
     return modules;
   }
   @Override
