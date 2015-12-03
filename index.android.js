@@ -4,8 +4,8 @@
  */
 'use strict';
 
-var ToastAndroid = require('ToastAndroid')
-ToastAndroid.show('Awesome', ToastAndroid.SHORT);
+var ToastModule = require('./ToastModule')
+ToastModule.show('Sup', ToastModule.SHORT);
 
 var React = require('react-native');
 var {
